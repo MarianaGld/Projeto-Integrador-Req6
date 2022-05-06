@@ -96,13 +96,13 @@ Construção de API para realizar a logística de produtos alimentícios em esta
 ***
 
 ##EndPoint REQ6:
-- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/buyer/[id])
+- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/sections?warehouseId={id warehouse})
 
-- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/buyer?  queryparam[id]  &queryparam=[status])
+- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/sections-category?categoryId={id category})
 
-- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/buyer?  queryparam[id]  &queryparam[David]&query param[email])
+- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/register-section)
 
-- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/buyer/[id])
+- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/update-section)
 
 ***
 

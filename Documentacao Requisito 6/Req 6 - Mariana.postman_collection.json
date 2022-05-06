@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "37416ac0-aaa4-46b8-8de6-62c3717e6011",
+		"name": "Req 6 - Mariana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetSections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fresh-products/sections?warehouseId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fresh-products",
+						"sections"
+					],
+					"query": [
+						{
+							"key": "warehouseId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSectionsCategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fresh-products/sections-category?categoryId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fresh-products",
+						"sections-category"
+					],
+					"query": [
+						{
+							"key": "categoryId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostSection",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Section 6\",\n    \"capacity\": \"10\",\n    \"warehouseId\": \"1\",\n    \"categoryId\": \"2\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fresh-products/register-section",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fresh-products",
+						"register-section"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSection",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\",\n    \"name\" : \"Section 1\",\n    \"capacity\": 40\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fresh-products/update-section",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fresh-products",
+						"update-section"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
